@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
+}
+.divisor {
+  border: none; /* Remove a borda padrão */
+  border-top: 1.5px solid #00000073; /* Adiciona uma borda superior de 1px sólida em cinza claro */
+  margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+.logo {
+  padding-left: -20px;
+}

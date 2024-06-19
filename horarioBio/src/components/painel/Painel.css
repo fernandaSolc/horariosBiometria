@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.woff2') format('woff2'),
+       url('fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Bold.woff2') format('woff2'),
+       url('fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Quadrado {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  width: 112.14vh;
+  height: 83vh;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #EFF0F6;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem; 
+
+}
