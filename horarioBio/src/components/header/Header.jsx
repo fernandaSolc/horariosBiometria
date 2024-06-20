@@ -1,6 +1,7 @@
 import './header.css';
 import logo from '../../assets/logo.svg';
 
+
 const Cabecalho = () => {
   return (
     <div className="header">
@@ -10,6 +11,8 @@ const Cabecalho = () => {
       <div className='titulo'>
         <h1>Horário de Chegada</h1>
         <hr className="divisor"></hr>
+        <div className='download'>
+        </div>
       </div>
     </div>
   );

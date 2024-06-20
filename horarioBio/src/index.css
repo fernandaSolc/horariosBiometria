@@ -1,3 +1,3 @@
-:root {
-  background: linear-gradient(200deg, #E29AE6 10%, #E69E71 90%);
+html {
+  background: linear-gradient(200deg, #E29AE6 50vh, #E69E71 90vh);
 }

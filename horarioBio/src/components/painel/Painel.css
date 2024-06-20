@@ -16,18 +16,22 @@
 .Quadrado {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  width: 112.14vh;
-  height: 83vh;
+  width: 113vh;
+  height: 89vh;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   border: 1px solid #EFF0F6;
-  padding: 2vh;
+  padding: 4vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 h3 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.25rem; 
-
+  color: #2F2F2F;
+}
+.divisor2 {
+  width: 110vh;
+  border-top: 1px solid #a1a1a156;
 }

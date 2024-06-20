@@ -4,3 +4,8 @@
   align-items: center;
   height: 90vh;
 }
+.download{
+  display: flex;
+  justify-content: end;
+  width: 190vh;
+  }
