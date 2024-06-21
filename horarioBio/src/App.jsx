@@ -1,3 +1,4 @@
+import 'react';
 import Quadrado from './components/painel/Painel.jsx';
 import Cabecalho from './components/header/Header.jsx';
 import './App.css';
