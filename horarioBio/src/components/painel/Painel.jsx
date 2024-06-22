@@ -1,4 +1,5 @@
 import './Painel.css';
+import Tabela from '../tabela/Tabela.jsx'
 
 const Quadrado = () => {
   return (
@@ -6,6 +7,7 @@ const Quadrado = () => {
       <div className='infos'>
       <h3>Monitores</h3>
       <hr className="divisor2"></hr>
+      <Tabela />
       </div>
     </div>
   );

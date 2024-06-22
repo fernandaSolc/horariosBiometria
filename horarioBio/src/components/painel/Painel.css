@@ -22,8 +22,6 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid #EFF0F6;
   padding: 4vh;
-  display: flex;
-  flex-direction: row;
 }
 h3 {
   font-family: 'Inter', sans-serif;
