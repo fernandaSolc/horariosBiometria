@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Tabela.css'
 import busca from '../../assets/iconBusca.svg'
-import './BotaoFiltro.css'
 
 // Componente para renderizar a tabela
 const Tabela = () => {
@@ -38,19 +37,21 @@ const Tabela = () => {
 
   return (
     <div className='tabela'>
-      <table>
+      <table className='tab'>
         <thead>
           <tr className='titulos1'>
           <div className='busca'>
             <img className='icon' src={busca}></img> 
           <input className='pesquisa' placeholder='Search'></input>
           </div>
-           <th className='datas'>Hora <button className="filter-button" onClick={toggleHoraFilter}>
+           <th className='datas'>Hora</th>
+           <button className="filter-button" onClick={toggleHoraFilter}>
                 <span className={`arrow ${horaFilterOpen ? 'open' : ''}`}>&#9660;</span>
-              </button></th>
-           <th className='datas'>Data <button className="filter-button" onClick={toggleDataFilter}>
+              </button>
+           <th className='datas'>Data</th>
+           <button className="filter-button" onClick={toggleDataFilter}>
                 <span className={`arrow ${dataFilterOpen ? 'open' : ''}`}>&#9660;</span>
-              </button></th>
+              </button>
           </tr>
         </thead>
         <tbody>

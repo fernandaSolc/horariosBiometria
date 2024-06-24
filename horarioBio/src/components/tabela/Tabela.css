@@ -2,24 +2,60 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .datas {
     background-color: #EFF0F6 ;
     color: #4F5E74;
     border-radius: 7px;
+    text-align:center;
 }
+
 .pesquisa {
     border: none;
     height: 4vh;
 }
+
 .pesquisa:focus {
     outline: none;
 }
+
 .busca {
     display: flex;
     align-items: center;
 }
+
 .icon {
     height: 3vh;
+}
+
+.header-cell {
+    display: flex;
+    align-items: end;
+}
+
+.filter-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  transition: color 0.3s ease;
+}
+
+.filter-button:hover {
+  color: #70306b;
+}
+
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
 }
