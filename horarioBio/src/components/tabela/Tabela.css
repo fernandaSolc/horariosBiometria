@@ -1,4 +1,25 @@
-table {
+.tabela {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.datas {
+    background-color: #EFF0F6 ;
+    color: #4F5E74;
+    border-radius: 7px;
+}
+.pesquisa {
+    border: none;
+    height: 4vh;
+}
+.pesquisa:focus {
+    outline: none;
+}
+.busca {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    height: 3vh;
 }

@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Tabela.css'
+import busca from '../../assets/iconBusca.svg'
+import './BotaoFiltro.css'
 
 // Componente para renderizar a tabela
 const Tabela = () => {
   const [dados, setDados] = useState([]);
+  const [horaFilterOpen, setHoraFilterOpen] = useState(false);
+  const [dataFilterOpen, setDataFilterOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,14 +25,32 @@ const Tabela = () => {
     fetchData();
   }, []);
 
+
+  const toggleHoraFilter = () => {
+    setHoraFilterOpen(!horaFilterOpen);
+    // Adicione a lógica de filtragem de "Hora" aqui, se necessário
+  };
+
+  const toggleDataFilter = () => {
+    setDataFilterOpen(!dataFilterOpen);
+    // Adicione a lógica de filtragem de "Data" aqui, se necessário
+  };
+
   return (
-    <div>
+    <div className='tabela'>
       <table>
         <thead>
           <tr className='titulos1'>
-            <th>Nome</th>
-            <th>Hora</th>
-            <th>Data</th>
+          <div className='busca'>
+            <img className='icon' src={busca}></img> 
+          <input className='pesquisa' placeholder='Search'></input>
+          </div>
+           <th className='datas'>Hora <button className="filter-button" onClick={toggleHoraFilter}>
+                <span className={`arrow ${horaFilterOpen ? 'open' : ''}`}>&#9660;</span>
+              </button></th>
+           <th className='datas'>Data <button className="filter-button" onClick={toggleDataFilter}>
+                <span className={`arrow ${dataFilterOpen ? 'open' : ''}`}>&#9660;</span>
+              </button></th>
           </tr>
         </thead>
         <tbody>
