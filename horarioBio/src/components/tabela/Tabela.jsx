@@ -13,7 +13,7 @@ const Tabela = () => {
     const fetchData = async () => {
       try {
         // Substitua o fetch com a chamada real à API para obter os dados do banco de dados
-        const response = await fetch('/api/dados'); // Altere a URL para a API real
+        const response = await fetch('api');
         const data = await response.json();
         setDados(data);
       } catch (error) {
@@ -27,12 +27,12 @@ const Tabela = () => {
 
   const toggleHoraFilter = () => {
     setHoraFilterOpen(!horaFilterOpen);
-    // Adicione a lógica de filtragem de "Hora" aqui, se necessário
+    // Adicione a lógica de filtragem de "Hora"
   };
 
   const toggleDataFilter = () => {
     setDataFilterOpen(!dataFilterOpen);
-    // Adicione a lógica de filtragem de "Data" aqui, se necessário
+    // Adicione a lógica de filtragem de "Data"
   };
 
   return (
